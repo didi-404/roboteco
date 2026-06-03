@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início | Roboteco</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="home.html">Roboteco</a>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <a class="nav-link" href="home.html">Início</a>
+      <a class="nav-link" href="aulas.html">Aulas</a>
+      <a class="nav-link" href="jogos.html">Jogos</a>
+      <a class="nav-link" href="perfil.html">Perfil</a>
+      <a class="nav-link" href="criadores.html">Criadores</a>
+      <a class="nav-link" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" title="Alternar modo">ϟ</button>
+      <a class="avatar" href="perfil.html" aria-label="Perfil"></a>
+      <button class="icon-btn hamb" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <a href="home.html">Início</a>
+    <a href="aulas.html">Aulas</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="criadores.html">Criadores</a>
+    <a href="admin.html">Admin</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<main class="page">
+<section class="container hero">
+  <div class="hero-content">
+    <span class="pill blue">Missão em destaque</span>
+    <h1>Olá, Pequeno Engenheiro! 🚀</h1>
+    <p>Continue sua jornada de robótica, desbloqueie desafios, acompanhe seu progresso e construa projetos incríveis no laboratório Roboteco.</p>
+    <div class="stat-row" style="margin-top:26px">
+      <a class="btn btn-orange" href="aula-detalhe.html">Continuar Missão →</a>
+      <span class="tag">⚡ <strong data-xp-text>1250 XP</strong></span>
+      <span class="tag">🏆 8 conquistas</span>
+    </div>
+  </div>
+  <div class="hero-media"><div class="polaroid"><img src="assets/robot-hero.svg" alt="Robô Roboteco"></div></div>
+</section>
+<section class="container mission-grid">
+  <div class="card mission-card">
+    <div class="mission-head">
+      <div>
+        <span class="pill">Missão em destaque</span>
+        <h2 class="small-title">Resgate na Montanha</h2>
+      </div>
+      <strong class="mono">XP: +250</strong>
+    </div>
+    <p>Progresso do Robô</p>
+    <div class="progress"><span data-progress="65"></span></div>
+    <div class="mission-actions">
+      <a class="action-box" href="aula-detalhe.html">▶<br>Continuar assistindo</a>
+      <a class="action-box" href="jogos.html">🧩<br>Jogar agora</a>
+      <a class="action-box" href="aulas.html">⊕<br>Nova atividade</a>
+    </div>
+  </div>
+  <aside class="side-stack">
+    <div class="card" style="padding:28px">
+      <h2 class="small-title">Próximas Aulas</h2>
+      <div class="next-class"><div class="date-box">15<br>MAI</div><div><strong>Laboratório de Motores</strong><br><span class="muted">14:00 · Sala B2</span></div></div>
+      <div class="next-class"><div class="date-box">22<br>MAI</div><div><strong>Programação em Blocos</strong><br><span class="muted">15:30 · Lab Info</span></div></div>
+    </div>
+    <div class="tip"><span class="mono">💡 Dica do Dia</span><p>“Sempre verifique as conexões dos seus cabos antes de ligar a bateria. Segurança em primeiro lugar!”</p></div>
+  </aside>
+</section>
+<section class="container main-section">
+  <h2 class="small-title">Minhas Conquistas</h2>
+  <div class="achievements">
+    <div class="card badge-card"><div class="badge-icon">🎖</div><strong>Codificador Jr.</strong><br><span class="mono">Concluído</span></div>
+    <div class="card badge-card"><div class="badge-icon">⚙</div><strong>Lógica de Ferro</strong><br><span class="mono">Concluído</span></div>
+    <div class="card badge-card lock"><div class="badge-icon">🦾</div><strong>Mestre das Engrenagens</strong><br><span class="mono">Faltam 2 missões</span></div>
+    <div class="card badge-card lock"><div class="badge-icon">⚡</div><strong>Curto Circuito</strong><br><span class="mono">Bloqueado</span></div>
+  </div>
+  <div class="card idea-board">
+    <span class="section-kicker">Comunidade</span>
+    <h2 class="small-title">Quadro de Ideias do Laboratório</h2>
+    <p class="muted">Digite uma sugestão e ela aparece como post-it. As mensagens ficam salvas no navegador.</p>
+    <form class="idea-form" id="ideaForm"><input class="input" id="ideaInput" placeholder="Ex: criar desafio de sensor de luz..."><button class="btn btn-primary">Pregar ideia</button></form>
+    <div class="ideas" id="ideasWrap"></div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-row">
+    <a class="brand" href="home.html">Roboteco</a>
+    <p class="muted">© 2026 Roboteco. Construindo o futuro, um bloco por vez.</p>
+    <div class="footer-links">
+      <a href="sobre.html">Suporte</a>
+      <a href="sobre.html">Privacidade</a>
+      <a href="sobre.html">Termos</a>
+      <a href="criadores.html">Comunidade</a>
+    </div>
+  </div>
+</footer>
+<div class="toast"></div>
+<div class="modal" id="videoModal">
+  <div class="modal-card">
+    <button class="close-modal" type="button">×</button>
+    <h2 class="modal-title">Prévia da aula Roboteco</h2>
+    <div class="modal-frame">
+      <div>
+        <div style="font-size:4rem">▶</div>
+        <p>Vídeo demonstrativo simulado. Em um projeto real, aqui entraria o player da aula.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body></html>

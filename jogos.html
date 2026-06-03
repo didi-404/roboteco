@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos | Roboteco</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="home.html">Roboteco</a>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <a class="nav-link" href="home.html">Início</a>
+      <a class="nav-link" href="aulas.html">Aulas</a>
+      <a class="nav-link" href="jogos.html">Jogos</a>
+      <a class="nav-link" href="perfil.html">Perfil</a>
+      <a class="nav-link" href="criadores.html">Criadores</a>
+      <a class="nav-link" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" title="Alternar modo">ϟ</button>
+      <a class="avatar" href="perfil.html" aria-label="Perfil"></a>
+      <button class="icon-btn hamb" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <a href="home.html">Início</a>
+    <a href="aulas.html">Aulas</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="criadores.html">Criadores</a>
+    <a href="admin.html">Admin</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<main class="page">
+<section class="container hero compact">
+  <div class="hero-content"><span class="pill blue">Missão em destaque</span><h1>Missão Marte: Resgate do Rover</h1><p>Programe o robô explorador para navegar pelo terreno acidentado de Marte, coletar amostras e voltar para a base.</p><div class="stat-row" style="margin-top:22px"><span>⭐ 4.9</span><span>⏱ 15 min</span><span>🏆 +500 XP</span><button class="btn btn-orange" data-open-video>Jogar Agora ▶</button></div></div>
+  <div class="hero-media"><div class="polaroid"><img src="assets/rover.svg" alt="Rover em Marte"></div></div>
+</section>
+<section class="container main-section games-layout">
+  <aside class="card filters"><h2 class="small-title">Categorias</h2><label class="check"><input class="game-check" type="checkbox" value="todos" checked> Todos os Jogos</label><label class="check"><input class="game-check" type="checkbox" value="logica"> Lógica em Blocos</label><label class="check"><input class="game-check" type="checkbox" value="mecanica"> Engenharia Mecânica</label><label class="check"><input class="game-check" type="checkbox" value="circuitos"> Circuitos Eletrônicos</label><hr style="border:0;border-top:1px solid var(--line);margin:24px 0"><h3>Dificuldade</h3><div class="difficulty-buttons"><button class="diff-btn active" data-diff="todos">Todas</button><button class="diff-btn" data-diff="facil">Iniciante</button><button class="diff-btn" data-diff="medio">Intermediário</button><button class="diff-btn" data-diff="dificil">Avançado</button></div></aside>
+  <div><div class="toolbar" style="margin-top:0"><h1 class="section-title" style="font-size:2.2rem">Biblioteca de Desafios</h1><div class="view-switch"><button class="view-btn active" data-view="grid">▦</button><button class="view-btn" data-view="list">☰</button></div></div>
+  <div class="game-grid game-list">
+    <article class="game-card" data-category="logica" data-difficulty="facil"><div class="media"><img src="assets/gears.svg"><span class="pill difficulty right">Fácil</span></div><div class="game-body"><h2>Labirinto do Robô</h2><p>Arraste blocos lógicos para guiar o pequeno Boteco até a saída.</p><div class="game-meta"><span>☆ 150 XP</span><button class="btn btn-primary">Jogar</button></div></div></article>
+    <article class="game-card" data-category="mecanica" data-difficulty="medio"><div class="media"><img src="assets/lesson-light.svg"><span class="pill orange difficulty right">Médio</span></div><div class="game-body"><h2>Desafio das Engrenagens</h2><p>Conecte as peças certas para fazer a fábrica funcionar de novo.</p><div class="game-meta"><span>☆ 300 XP</span><button class="btn btn-primary">Jogar</button></div></div></article>
+    <article class="game-card" data-category="circuitos" data-difficulty="dificil"><div class="media"><img src="assets/circuit.svg"><span class="pill locked difficulty right">Difícil</span></div><div class="game-body"><h2>Conserto Binário</h2><p>Decifre os códigos e impeça o vírus de desligar a central da cidade.</p><div class="game-meta"><span>☆ 500 XP</span><button class="btn btn-primary">Jogar</button></div></div></article>
+    <article class="game-card" data-category="mecanica" data-difficulty="medio"><div class="media"><img src="assets/robot-hero.svg"><span class="pill orange difficulty right">Médio</span></div><div class="game-body"><h2>Montagem Expressa</h2><p>Monte seu robô escolhendo as peças corretas para cada função.</p><div class="game-meta"><span>☆ 250 XP</span><button class="btn btn-primary">Jogar</button></div></div></article>
+  </div><div class="empty-state">Nenhum jogo combina com esses filtros.</div></div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-row">
+    <a class="brand" href="home.html">Roboteco</a>
+    <p class="muted">© 2026 Roboteco. Construindo o futuro, um bloco por vez.</p>
+    <div class="footer-links">
+      <a href="sobre.html">Suporte</a>
+      <a href="sobre.html">Privacidade</a>
+      <a href="sobre.html">Termos</a>
+      <a href="criadores.html">Comunidade</a>
+    </div>
+  </div>
+</footer>
+<div class="toast"></div>
+<div class="modal" id="videoModal">
+  <div class="modal-card">
+    <button class="close-modal" type="button">×</button>
+    <h2 class="modal-title">Prévia da aula Roboteco</h2>
+    <div class="modal-frame">
+      <div>
+        <div style="font-size:4rem">▶</div>
+        <p>Vídeo demonstrativo simulado. Em um projeto real, aqui entraria o player da aula.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body></html>

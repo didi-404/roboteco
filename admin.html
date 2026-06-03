@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Roboteco</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="home.html">Roboteco</a>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <a class="nav-link" href="home.html">Início</a>
+      <a class="nav-link" href="aulas.html">Aulas</a>
+      <a class="nav-link" href="jogos.html">Jogos</a>
+      <a class="nav-link" href="perfil.html">Perfil</a>
+      <a class="nav-link" href="criadores.html">Criadores</a>
+      <a class="nav-link" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" title="Alternar modo">ϟ</button>
+      <a class="avatar" href="perfil.html" aria-label="Perfil"></a>
+      <button class="icon-btn hamb" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <a href="home.html">Início</a>
+    <a href="aulas.html">Aulas</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="criadores.html">Criadores</a>
+    <a href="admin.html">Admin</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<main class="page">
+<section class="container main-section"><span class="section-kicker">Área administrativa</span><h1 class="section-title">Cadastro de Aula Presencial</h1><p class="text-lead">Gerencie a programação dos laboratórios e turmas ativas. O formulário adiciona a aula na agenda da semana sem recarregar a página.</p><div class="admin-grid"><div><form class="card admin-form" data-form="admin"><h2>⊕ Agendar Nova Aula</h2><div class="form-row"><div class="form-group"><label>Data da Aula</label><input class="input" name="data" type="date" required></div><div class="form-group"><label>Horário</label><input class="input" name="hora" type="time" required></div></div><div class="form-row"><div class="form-group"><label>Laboratório</label><select class="input" name="lab"><option>Lab Alpha</option><option>Lab Beta</option><option>Lab Gamma</option></select></div><div class="form-group"><label>Kit de Robótica</label><select class="input" name="kit"><option>Kit Engrenagens Básicas v2</option><option>Sensores Avançados</option><option>Montagem Inicial</option></select></div></div><div class="form-group"><label>Instrutor Responsável</label><select class="input" name="instrutor"><option>Prof. Carlos Silva</option><option>Prof. Ana Souza</option><option>Equipe Roboteco</option></select></div><button class="btn btn-primary" style="float:right">Confirmar Agendamento →</button><div style="clear:both"></div></form><div class="card schedule"><h2>Agenda da Semana</h2><div class="week"><div class="day" data-day="seg"><strong>SEG<br>12</strong><div class="class-chip">Intro à Mec.<br>09:00 - Lab Alpha</div></div><div class="day today" data-day="ter"><strong>TER<br>13</strong><div class="class-chip orange">Sensores Av.<br>14:00 - Lab Beta</div><div class="class-chip">Lógica C++<br>16:30 - Lab Gamma</div></div><div class="day" data-day="qua"><strong>QUA<br>14</strong><p class="muted"><em>Sem aulas</em></p></div><div class="day" data-day="qui"><strong>QUI<br>15</strong><div class="class-chip">Montagem<br>10:00 - Lab Alpha</div></div><div class="day" data-day="sex"><strong>SEX<br>16</strong><p class="muted"><em>Manutenção</em></p></div></div></div></div><aside class="admin-side"><div class="card metric-card"><div class="icon-circle" style="margin:auto">👥</div><strong style="font-size:2rem">142</strong><br><span class="mono">Alunos ativos</span></div><div class="card metric-card"><div class="icon-circle" style="margin:auto;background:#e4ffe9;color:#007d3d">✓</div><strong id="todayClasses" style="font-size:2rem">08</strong><br><span class="mono">Aulas hoje</span></div><div class="card student-list"><h2>Alunos na Próxima Aula</h2><span class="pill orange">Turma B2</span><input class="input" id="studentSearch" style="margin-top:18px" placeholder="Buscar aluno..."><div class="student"><div class="initial">JP</div><div><strong>João Pedro Silva</strong><br><span class="muted">Nível: Intermediário</span></div></div><div class="student"><div class="initial">MC</div><div><strong>Maria Clara Alves</strong><br><span class="muted">Nível: Avançado</span></div></div><div class="student"><div class="initial">LF</div><div><strong>Lucas Fernandes</strong><br><span class="muted">Nível: Intermediário</span></div></div><div class="student"><div class="initial">AB</div><div><strong>Ana Beatriz Souza</strong><br><span class="muted">Nível: Iniciante</span></div></div></div></aside></div></section>
+</main>
+<footer class="footer">
+  <div class="container footer-row">
+    <a class="brand" href="home.html">Roboteco</a>
+    <p class="muted">© 2026 Roboteco. Construindo o futuro, um bloco por vez.</p>
+    <div class="footer-links">
+      <a href="sobre.html">Suporte</a>
+      <a href="sobre.html">Privacidade</a>
+      <a href="sobre.html">Termos</a>
+      <a href="criadores.html">Comunidade</a>
+    </div>
+  </div>
+</footer>
+<div class="toast"></div>
+<div class="modal" id="videoModal">
+  <div class="modal-card">
+    <button class="close-modal" type="button">×</button>
+    <h2 class="modal-title">Prévia da aula Roboteco</h2>
+    <div class="modal-frame">
+      <div>
+        <div style="font-size:4rem">▶</div>
+        <p>Vídeo demonstrativo simulado. Em um projeto real, aqui entraria o player da aula.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body></html>

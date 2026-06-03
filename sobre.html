@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Roboteco</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="home.html">Roboteco</a>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <a class="nav-link" href="home.html">Início</a>
+      <a class="nav-link" href="aulas.html">Aulas</a>
+      <a class="nav-link" href="jogos.html">Jogos</a>
+      <a class="nav-link" href="perfil.html">Perfil</a>
+      <a class="nav-link" href="criadores.html">Criadores</a>
+      <a class="nav-link" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" title="Alternar modo">ϟ</button>
+      <a class="avatar" href="perfil.html" aria-label="Perfil"></a>
+      <button class="icon-btn hamb" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <a href="home.html">Início</a>
+    <a href="aulas.html">Aulas</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="criadores.html">Criadores</a>
+    <a href="admin.html">Admin</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<main class="page">
+<section class="container hero hero-light"><div class="hero-content"><span class="pill blue">Sobre o projeto</span><h1>Robótica, lógica e criatividade em uma única plataforma.</h1><p>A Roboteco é uma experiência educacional gamificada para aprender tecnologia na prática, com missões, aulas, conquistas e acompanhamento de progresso.</p><a class="btn btn-primary" href="cadastro.html">Começar agora</a></div><div class="hero-media"><div class="polaroid"><img src="assets/classroom.svg"></div></div></section>
+<section class="container main-section"><div class="about-grid"><div class="card about-card"><div class="icon-circle">🎮</div><h2>Gamificação</h2><p class="muted">XP, medalhas, desafios e feedback visual para manter os alunos engajados.</p></div><div class="card about-card"><div class="icon-circle">🤖</div><h2>Aulas práticas</h2><p class="muted">Conteúdos passo a passo com montagem, sensores, circuitos e programação.</p></div><div class="card about-card"><div class="icon-circle">📊</div><h2>Acompanhamento</h2><p class="muted">Perfil com progresso, atividades semanais e trilha de aprendizado.</p></div></div><div class="timeline"><div class="timeline-item"><span class="mono">01</span><h3>Entrar</h3><p>Crie sua conta de estudante.</p></div><div class="timeline-item"><span class="mono">02</span><h3>Aprender</h3><p>Assista aulas e monte projetos.</p></div><div class="timeline-item"><span class="mono">03</span><h3>Jogar</h3><p>Resolva missões interativas.</p></div><div class="timeline-item"><span class="mono">04</span><h3>Evoluir</h3><p>Ganhe XP e desbloqueie conquistas.</p></div></div></section>
+</main>
+<footer class="footer">
+  <div class="container footer-row">
+    <a class="brand" href="home.html">Roboteco</a>
+    <p class="muted">© 2026 Roboteco. Construindo o futuro, um bloco por vez.</p>
+    <div class="footer-links">
+      <a href="sobre.html">Suporte</a>
+      <a href="sobre.html">Privacidade</a>
+      <a href="sobre.html">Termos</a>
+      <a href="criadores.html">Comunidade</a>
+    </div>
+  </div>
+</footer>
+<div class="toast"></div>
+<div class="modal" id="videoModal">
+  <div class="modal-card">
+    <button class="close-modal" type="button">×</button>
+    <h2 class="modal-title">Prévia da aula Roboteco</h2>
+    <div class="modal-frame">
+      <div>
+        <div style="font-size:4rem">▶</div>
+        <p>Vídeo demonstrativo simulado. Em um projeto real, aqui entraria o player da aula.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body></html>

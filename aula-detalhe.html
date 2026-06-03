@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula passo a passo | Roboteco</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="home.html">Roboteco</a>
+    <nav class="nav-menu" aria-label="Menu principal">
+      <a class="nav-link" href="home.html">Início</a>
+      <a class="nav-link" href="aulas.html">Aulas</a>
+      <a class="nav-link" href="jogos.html">Jogos</a>
+      <a class="nav-link" href="perfil.html">Perfil</a>
+      <a class="nav-link" href="criadores.html">Criadores</a>
+      <a class="nav-link" href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" title="Alternar modo">ϟ</button>
+      <a class="avatar" href="perfil.html" aria-label="Perfil"></a>
+      <button class="icon-btn hamb" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Menu mobile">
+    <a href="home.html">Início</a>
+    <a href="aulas.html">Aulas</a>
+    <a href="jogos.html">Jogos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="criadores.html">Criadores</a>
+    <a href="admin.html">Admin</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+<main class="page">
+<section class="container main-section">
+  <div class="breadcrumb"><a href="aulas.html">Cursos</a> › Robótica Básica › <a href="aula-detalhe.html">Construindo o Mini-Bot</a></div>
+  <div class="detail-grid">
+    <div>
+      <div class="video-card"><img src="assets/lesson-sensor.svg" alt="Vídeo da aula"><button class="play" data-title="Atividade: O Primeiro Passo do Robô">▶</button><div class="progress"><span data-progress="28"></span></div></div>
+      <div class="card activity-card"><span class="pill orange" style="float:right">Fácil</span><h1 class="small-title">Atividade: O Primeiro Passo do Robô</h1><p>Nesta atividade, vamos aprender a estrutura básica de movimento conectando os motores à base principal.</p><div class="meta"><span>🕘 15 min</span><span>⭐ XP: 250</span><span>🤖 Robótica básica</span></div></div>
+    </div>
+    <div class="steps">
+      <h2 class="small-title">▦ Passo a Passo</h2>
+      <article class="step-card active"><div class="step-number">1</div><div><h3>Separe os Motores</h3><p class="muted">Localize os dois motores DC amarelos na sua caixa de ferramentas Roboteco.</p><div class="step-img"><img src="assets/gears.svg" alt="Motores"></div></div></article>
+      <article class="step-card"><div class="step-number">2</div><div><h3>Conecte os Cabos</h3><p class="muted">Encaixe os conectores brancos nos terminais traseiros de cada motor.</p><div class="step-img"><img src="assets/circuit.svg" alt="Cabos"></div></div></article>
+      <article class="step-card"><div class="step-number">3</div><div><h3>Fixe a Base</h3><p class="muted">Use os parafusos longos no suporte acrílico lateral.</p><div class="step-img"><img src="assets/lesson-light.svg" alt="Base"></div></div></article>
+      <button id="finishLesson" class="btn btn-green block">✓ Concluir Atividade</button>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-row">
+    <a class="brand" href="home.html">Roboteco</a>
+    <p class="muted">© 2026 Roboteco. Construindo o futuro, um bloco por vez.</p>
+    <div class="footer-links">
+      <a href="sobre.html">Suporte</a>
+      <a href="sobre.html">Privacidade</a>
+      <a href="sobre.html">Termos</a>
+      <a href="criadores.html">Comunidade</a>
+    </div>
+  </div>
+</footer>
+<div class="toast"></div>
+<div class="modal" id="videoModal">
+  <div class="modal-card">
+    <button class="close-modal" type="button">×</button>
+    <h2 class="modal-title">Prévia da aula Roboteco</h2>
+    <div class="modal-frame">
+      <div>
+        <div style="font-size:4rem">▶</div>
+        <p>Vídeo demonstrativo simulado. Em um projeto real, aqui entraria o player da aula.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body></html>
